@@ -7,7 +7,7 @@ import os
 import imp
 
 import sys
-sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Primer\\blender_scripts')
+sys.path.append('/Users/kevin/dev/primer/blender_scripts')
 
 import svg_bobject
 imp.reload(svg_bobject)

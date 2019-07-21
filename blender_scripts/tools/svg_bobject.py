@@ -1,9 +1,9 @@
 import imp
 from copy import deepcopy
-import winsound
+# import winsound
 
 import sys
-sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Primer\\blender_scripts')
+sys.path.append('/Users/kevin/dev/primer/blender_scripts')
 
 import bobject
 imp.reload(bobject)

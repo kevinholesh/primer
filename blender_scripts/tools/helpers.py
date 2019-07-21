@@ -13,9 +13,9 @@ import constants
 imp.reload(constants)
 from constants import *
 
-#sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Primer\\blender_scripts')
+#sys.path.append('/Users/kevin/dev/primer/blender_scripts')
 import bobject
-import winsound
+# import winsound
 
 '''
 Blender object functions
@@ -1231,47 +1231,47 @@ def print_time_report():
     print(total.total_seconds(), "Total")
 
 def finish_noise(error = False):
-    '''tempo = 138 #beats per minute
-    mspb = 60000 // tempo #milliseconds per beat
-
-    duration = mspb // 4 #Triplet. Shorter because there's actually a delay
-                         #between notes. It's like winsound wasn't planning on
-                         #music or something. Wth.  ¯\_(ツ)_/¯
-    freq = 523  # C
-    winsound.Beep(freq, duration)
-    duration = mspb // 4
-    freq = 523  # C
-    winsound.Beep(freq, duration)
-    duration = mspb // 4
-    freq = 523  # C
-    winsound.Beep(freq, duration)
-    duration = mspb #Quarter note
-    freq = 523  # C
-    winsound.Beep(freq, duration)
-
-    duration = mspb #Quarter note
-    freq = 415  # Ab
-    winsound.Beep(freq, duration)
-    duration = mspb #Quarter note
-    freq = 466  # Bb
-    winsound.Beep(freq, duration)
-    duration = mspb // 4
-    freq = 523  # C
-    winsound.Beep(freq, duration)
-    time.sleep((mspb // 2) / 1000) #Also different than you'd think.
-    duration = mspb // 4
-    freq = 466  # Bb
-    winsound.Beep(freq, duration)
-    duration = mspb #Quarter note
-    freq = 523  # C
-    winsound.Beep(freq, duration)'''
-    if error == True:
-        winsound.PlaySound("SystemHand", winsound.SND_ALIAS)
-    else:
-        winsound.MessageBeep()
+    # '''tempo = 138 #beats per minute
+    # mspb = 60000 // tempo #milliseconds per beat
+    #
+    # duration = mspb // 4 #Triplet. Shorter because there's actually a delay
+    #                      #between notes. It's like winsound wasn't planning on
+    #                      #music or something. Wth.  ¯\_(ツ)_/¯
+    # freq = 523  # C
+    # winsound.Beep(freq, duration)
+    # duration = mspb // 4
+    # freq = 523  # C
+    # winsound.Beep(freq, duration)
+    # duration = mspb // 4
+    # freq = 523  # C
+    # winsound.Beep(freq, duration)
+    # duration = mspb #Quarter note
+    # freq = 523  # C
+    # winsound.Beep(freq, duration)
+    #
+    # duration = mspb #Quarter note
+    # freq = 415  # Ab
+    # winsound.Beep(freq, duration)
+    # duration = mspb #Quarter note
+    # freq = 466  # Bb
+    # winsound.Beep(freq, duration)
+    # duration = mspb // 4
+    # freq = 523  # C
+    # winsound.Beep(freq, duration)
+    # time.sleep((mspb // 2) / 1000) #Also different than you'd think.
+    # duration = mspb // 4
+    # freq = 466  # Bb
+    # winsound.Beep(freq, duration)
+    # duration = mspb #Quarter note
+    # freq = 523  # C
+    # winsound.Beep(freq, duration)'''
+    # if error == True:
+    #     winsound.PlaySound("SystemHand", winsound.SND_ALIAS)
+    # else:
+    #     winsound.MessageBeep()
     #If you're using this and aren't using windows, here's a resource:
     #https://stackoverflow.com/questions/16573051/python-sound-alarm-when-code-finishes
-    #print('\007')
+    print('\007')
 
 def main():
     import_object('boerd_blob')

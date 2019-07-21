@@ -8,8 +8,8 @@ from copy import deepcopy
 from random import random, uniform
 
 import sys
-sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Primer\\blender_scripts')
-sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Primer\\blender_scripts\\tools')
+sys.path.append('/Users/kevin/dev/primer/blender_scripts')
+sys.path.append('/Users/kevin/dev/primer/blender_scripts/tools')
 
 import bobject
 import drawn_world
@@ -41,7 +41,7 @@ import natural_sim
 imp.reload(natural_sim)
 from natural_sim import *
 
-sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Primer\\blender_scripts\\video_scenes')
+sys.path.append('/Users/kevin/dev/primer/blender_scripts/video_scenes')
 
 import recurring_assets
 imp.reload(recurring_assets)
@@ -103,7 +103,7 @@ def initialize_blender(total_duration = DEFAULT_SCENE_DURATION, clear_blender = 
 
     #Set to 60 fps
     bpy.ops.script.execute_preset(
-        filepath="C:\\Program Files\\Blender Foundation\\Blender\\2.79\\scripts\\presets\\framerate\\60.py",
+        filepath="/Applications/Blender/blender.app/Contents/Resources/2.79/scripts/presets/framerate/60.py",
         menu_idname="RENDER_MT_framerate_presets"
     )
 
@@ -567,16 +567,19 @@ def test():
         print(ordered_asks)
 
 def main():
+    print('boomtown')
+
+
     """Use this as a test scene"""
-    #tex_test()
+    tex_test()
     """"""
 
-    #test()
+    # test()
     #draw_scenes_from_file(scds, clear = False)
-    draw_scenes_from_file(supply_and_demand)
+    # draw_scenes_from_file(supply_and_demand)
 
-    print_time_report()
-    finish_noise()
+    # print_time_report()
+    # finish_noise()
 
 if __name__ == "__main__":
     try:

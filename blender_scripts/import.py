@@ -2,8 +2,8 @@
 #https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Script_Runner
 
 import sys
-sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Primer\\blender_scripts')
-sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Primer\\blender_scripts\\tools')
+sys.path.append('/Users/kevin/dev/primer/blender_scripts')
+sys.path.append('/Users/kevin/dev/primer/blender_scripts\\tools')
 
 import imp
 

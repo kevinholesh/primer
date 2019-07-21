@@ -1,5 +1,5 @@
 import sys
-sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Blender')
+# sys.path.append('C:\\Users\\justi\\Documents\\CodeProjects\\Blender')
 import imp
 #import bpy
 import math
